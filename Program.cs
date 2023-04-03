@@ -1,12 +1,32 @@
 ﻿using System;
 
+string password = "";
+do
+{
+    System.Console.Write("Enter you password: ");
+    password = Console.ReadLine();
+}
+while(password != "Maqsudkhan");
 
-// System.Console.Write("Birinchi sonni kiriting: ");
-// string a = System.Console.ReadLine();
-// int firstNumber = System.Convert.ToInt32(a);
-// System.Console.Write("Ikkinchi sonni kiriting: ");
-// string b = System.Console.ReadLine();
-// int secondNumber = System.Convert.ToInt32(b);
+
+System.Console.Write("Birinchi sonni kiriting: ");
+int a = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Ikkinchi sonni kiriting: ");
+int b = Convert.ToInt32(Console.ReadLine());
+if (a>b)
+{
+    System.Console.WriteLine("The 1st is greater than the 2nd!");
+}
+else if (a==b)
+{
+    System.Console.WriteLine("The numbers equal!");
+}
+else
+{
+    System.Console.WriteLine("The 1st is less than the 2nd!");
+}
+
+
 
 // //   + - * /
 // System.Console.WriteLine($"Adding(Qo'shish) {firstNumber + secondNumber}");
@@ -20,15 +40,31 @@
 
 
 
-System.Console.Write("Type 1st number: ");
-int firstNumber = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Type 2nd number: ");
-int secondNumber = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Type 1st number: ");
+// int firstNumber = Convert.ToInt32(Console.ReadLine());
+// System.Console.Write("Type 2nd number: ");
+// int secondNumber = Convert.ToInt32(Console.ReadLine());
 
-System.Console.WriteLine($"1st number is greater than 2nd number: {firstNumber > secondNumber}");
-System.Console.WriteLine($"1st number is greater than or equal to 2nd number: {firstNumber >= secondNumber}");
-System.Console.WriteLine($"1st number is less than 2nd number: {firstNumber < secondNumber}");
-System.Console.WriteLine($"1st number is less than or equal to 2nd number: {firstNumber <= secondNumber}");
-System.Console.WriteLine($"Numbers are equal: {firstNumber == secondNumber}");
-System.Console.WriteLine($"Numbers are not equal: {firstNumber != secondNumber}");
+// System.Console.WriteLine($"1st number is greater than 2nd number: {firstNumber > secondNumber}");
+// System.Console.WriteLine($"1st number is greater than or equal to 2nd number: {firstNumber >= secondNumber}");
+// System.Console.WriteLine($"1st number is less than 2nd number: {firstNumber < secondNumber}");
+// System.Console.WriteLine($"1st number is less than or equal to 2nd number: {firstNumber <= secondNumber}");
+// System.Console.WriteLine($"Numbers are equal: {firstNumber == secondNumber}");
+// System.Console.WriteLine($"Numbers are not equal: {firstNumber != secondNumber}");
+
+// // for va foreach yordamida 1 dan 10 gacha bo'lgan sonlarni  ekranga chiqarish dasturi.
+
+
+// for(int i = 1; i <= 10; i++)
+// {
+//     System.Console.WriteLine(i);
+// }
+
+
+// int[] number = {1,2,3,4,5,6,7,8,9,10,11,12};
+// foreach(int num in number)
+// {
+//     System.Console.WriteLine(num);
+// }
+
 
