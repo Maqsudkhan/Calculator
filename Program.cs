@@ -52,8 +52,8 @@ else
 // System.Console.WriteLine($"Numbers are equal: {firstNumber == secondNumber}");
 // System.Console.WriteLine($"Numbers are not equal: {firstNumber != secondNumber}");
 
-// // for va foreach yordamida 1 dan 10 gacha bo'lgan sonlarni  ekranga chiqarish dasturi.
 
+// // for va foreach yordamida 1 dan 10 gacha bo'lgan sonlarni  ekranga chiqarish dasturi.
 
 // for(int i = 1; i <= 10; i++)
 // {
@@ -66,5 +66,31 @@ else
 // {
 //     System.Console.WriteLine(num);
 // }
+
+
+// Switch
+System.Console.Write("Enter operation (+,/,*,-,%) >>> ");
+string operation = Console.ReadLine();
+switch(operation)
+{
+    case "+":
+        System.Console.WriteLine($"{a}+{b}={a+b}");
+    break;
+    case "-":
+        System.Console.WriteLine($"{a}-{b}={a-b}");
+    break; 
+    case "*":
+        System.Console.WriteLine($"{a}x{b}={a*b}");
+    break;
+    case "/":
+        System.Console.WriteLine($"{a}:{b}={a/b}");
+    break;
+    case "%":
+        System.Console.WriteLine($"{a}%{b}={a%b} (qoldiq)");
+    break;
+    default:
+        System.Console.WriteLine("Operation Not Found!");
+    break;
+}
 
 
